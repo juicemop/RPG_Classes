@@ -1,7 +1,6 @@
 package rpgclasses.buffs;
 
 import necesse.engine.util.GameRandom;
-import necesse.entity.mobs.MobBeforeDamageOverTimeTakenEvent;
 import necesse.entity.mobs.MobBeforeHitCalculatedEvent;
 import necesse.entity.mobs.buffs.ActiveBuff;
 import necesse.entity.mobs.buffs.BuffEventSubscriber;
