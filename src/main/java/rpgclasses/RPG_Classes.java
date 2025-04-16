@@ -139,34 +139,7 @@ public class RPG_Classes {
 
     public void preInit() {
         config = new Config("settings.cfg");
-        System.out.println("[Classes Mod]");
-        System.out.println("- Experience Mod: " + config.getExperienceMod());
-        System.out.println("- Starting Experience: " + config.getStartingExperience());
-        System.out.println("- First Experience Requirement: " + config.getFirstExperienceReq());
-        System.out.println("- Experience Requirement Increment: " + config.getExperienceReqInc());
-        System.out.println("- Square Experience Requirement Increment: " + config.getSquareExperienceReqInc());
-        System.out.println("- Cube Experience Requirement Increment: " + config.getCubeExperienceReqInc());
-        System.out.println("- Damage Taken Modifier: " + config.getDamageTakenModifier());
-        System.out.println("- Knockback Given Modifier: " + config.getKnockbackGivenModifier());
-        System.out.println("- Enemy Spawn Rate Modifier: " + config.getEnemySpawnRateModifier());
-        System.out.println("- Enemy Spawn Cap Modifier: " + config.getEnemySpawnCapModifier());
-        System.out.println("- Raider Damage Modifier: " + config.getRaiderDamageModifier());
-        System.out.println("- Mobs Health Modifier: " + config.getMobsHealthModifier());
-        System.out.println("- Forest Mobs Health Modifier: " + config.getForestMobsHealthModifier());
-        System.out.println("- Snow Mobs Health Modifier: " + config.getSnowMobsHealthModifier());
-        System.out.println("- Dungeon Mobs Health Modifier: " + config.getDungeonMobsHealthModifier());
-        System.out.println("- Swamp Mobs Health Modifier: " + config.getSwampMobsHealthModifier());
-        System.out.println("- Desert Mobs Health Modifier: " + config.getDesertMobsHealthModifier());
-        System.out.println("- Temple Mobs Health Modifier: " + config.getTempleMobsHealthModifier());
-        System.out.println("- Forest Incursion Mobs Health Modifier: " + config.getForestIncursionMobsHealthModifier());
-        System.out.println("- Snow Incursion Mobs Health Modifier: " + config.getSnowIncursionMobsHealthModifier());
-        System.out.println("- Swamp Incursion Mobs Health Modifier: " + config.getSwampIncursionMobsHealthModifier());
-        System.out.println("- Desert Incursion Mobs Health Modifier: " + config.getDesertIncursionMobsHealthModifier());
-        System.out.println("- Slime Cave Incursion Mobs Health Modifier: " + config.getSlimeCaveIncursionMobsHealthModifier());
-        System.out.println("- Graveyard Cave Incursion Mobs Health Modifier: " + config.getGraveyardCaveIncursionMobsHealthModifier());
-        System.out.println("- Spider Castle Incursion Mobs Health Modifier: " + config.getSpiderCastleCaveIncursionMobsHealthModifier());
-        System.out.println("- Crystal Hollow Incursion Mobs Health Modifier: " + config.getCrystalHollowCaveIncursionMobsHealthModifier());
-        System.out.println("[End of File]");
+        System.out.println(config);
     }
 
     public void postInit() {
@@ -356,11 +329,13 @@ public class RPG_Classes {
                 new Object[]{config.getHealthEvilsProtector(), EvilsProtectorMob.class},
                 new Object[]{config.getHealthQueenSpider(), QueenSpiderMob.class},
                 new Object[]{config.getHealthVoidWizard(), VoidWizard.class},
+                new Object[]{config.getHealthChieftain(), ChieftainMob.class},
                 new Object[]{config.getHealthSwampGuardian(), SwampGuardianHead.class},
                 new Object[]{config.getHealthAncientVulture(), AncientVultureMob.class},
                 new Object[]{config.getHealthPirateCaptain(), PirateCaptainMob.class},
                 new Object[]{config.getHealthReaper(), ReaperMob.class, "BASE_MAX_HEALTH"},
                 new Object[]{config.getHealthReaperIncursion(), ReaperMob.class, "INCURSION_MAX_HEALTH"},
+                new Object[]{config.getHealthTheCursedCrone(), TheCursedCroneMob.class, "BASE_MAX_HEALTH"},
                 new Object[]{config.getHealthCryoQueen(), CryoQueenMob.class, "BASE_MAX_HEALTH"},
                 new Object[]{config.getHealthCryoQueenIncursion(), CryoQueenMob.class, "INCURSION_MAX_HEALTH"},
                 new Object[]{config.getHealthPestWarden(), PestWardenHead.class, "BASE_MAX_HEALTH"},
