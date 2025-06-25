@@ -12,8 +12,7 @@ public class FighterBuff extends SimpleClassBuff {
     public FighterBuff() {
         super(
                 new ModifierValue<>(BuffModifiers.MELEE_DAMAGE, 0.2F),
-                new ModifierValue<>(BuffModifiers.RANGED_DAMAGE, 0.2F),
-                new ModifierValue<>(BuffModifiers.MAX_MANA, -0.5F)
+                new ModifierValue<>(BuffModifiers.RANGED_DAMAGE, 0.2F)
         );
     }
 
