@@ -15,10 +15,7 @@ import rpgclasses.buffs.SimpleClassBuff;
 public class BeastMasterBuff extends SimpleClassBuff {
     public BeastMasterBuff() {
         super(
-                new ModifierValue<>(BuffModifiers.RANGED_CRIT_DAMAGE, 1F),
-                new ModifierValue<>(BuffModifiers.ARMOR, -0.25F),
-                new ModifierValue<>(BuffModifiers.MAX_HEALTH, -0.25F),
-                new ModifierValue<>(BuffModifiers.ATTACK_SPEED, -0.5F)
+                new ModifierValue<>(BuffModifiers.RANGED_CRIT_DAMAGE, 1F)
         );
     }
 
