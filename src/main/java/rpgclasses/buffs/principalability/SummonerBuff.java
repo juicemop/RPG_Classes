@@ -7,8 +7,7 @@ import rpgclasses.buffs.SimpleClassBuff;
 public class SummonerBuff extends SimpleClassBuff {
     public SummonerBuff() {
         super(
-                new ModifierValue<>(BuffModifiers.ARMOR, -0.25F),
-                new ModifierValue<>(BuffModifiers.MAX_HEALTH, -0.25F)
+                new ModifierValue<>(BuffModifiers.MANA_REGEN, 1F)
         );
     }
 }
