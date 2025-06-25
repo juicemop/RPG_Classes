@@ -11,8 +11,7 @@ public class AssassinBuff extends SimpleClassBuff {
                 new ModifierValue<>(BuffModifiers.MELEE_CRIT_DAMAGE, 0.5F),
                 new ModifierValue<>(BuffModifiers.CRIT_CHANCE, 0.1F),
                 new ModifierValue<>(RPG_Classes.DODGE_CHANCE, 0.2F),
-                new ModifierValue<>(BuffModifiers.ARMOR, -0.25F),
-                new ModifierValue<>(BuffModifiers.MAX_HEALTH, -0.25F)
+                new ModifierValue<>(BuffModifiers.SPEED, 0.3F)
         );
     }
 }
